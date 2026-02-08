@@ -4,7 +4,11 @@
   "description": "a storage engine experiment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "start:server": "ts-node src/index.ts --server",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "clean": "rm -rf dist data"
   },
   "keywords": [],
   "author": "",

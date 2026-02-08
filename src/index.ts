@@ -2,7 +2,7 @@ import * as readline from 'readline';
 import { StorageEngine } from './storage/StorageEngine';
 import { TCPServer } from './server/TCPServer';
 
-async function startREPL(storage: StorageEngine): Promise<void> {
+async function startCLI(storage: StorageEngine): Promise<void> {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -186,8 +186,7 @@ async function main(): Promise<void> {
     await server.start();
     console.log('Press Ctrl+C to stop the server.');
   } else {
-    // Start REPL mode
-    await startREPL(storage);
+    await startCLI(storage);
   }
 }
 
