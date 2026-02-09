@@ -1,5 +1,5 @@
 # keystone-db
-A storage engine experiment.
+A single node no-sql key value db and a storage engine experiment.
 
 ## Features
 
