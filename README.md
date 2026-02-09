@@ -59,3 +59,5 @@ src/
 4. **Checkpoint**: Saves snapshot and clears WAL periodically
 
 
+## To DO 
+- Redis + mini-Mongo hybrid
